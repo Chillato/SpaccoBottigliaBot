@@ -221,10 +221,10 @@ async def nomignolo(client, message):
     nomignoli = random.choice([f"👨Il nomignolo di {message.from_user.mention} è A <b>SMANDRUPPATA</b>", f"👨Il nomignolo di {message.from_user.mention} è A <b>Celoduro</b>", f"👨Il nomignolo di {message.from_user.mention} è A <b>Boss(ol)i secondo Beppe Grillo</b>"])
     await client.send_message(message.chat.id, nomignoli)
 
-@spaccobottiglie.on_message(filters.command("youtuber"))
+@spaccobottiglie.on_message(filters.command("youtube"))
 async def youtuber(client, message):
     youtube = random.choice([f"{message.from_user.mention} sta facendo video in qualità, me piaceh🔴", f"{message.from_user.mention} la smetti di fare quei tuoi video di merda🔴", f"{message.from_user.mention} ha superato <b>10k</b> di iscritti, GG per te🔴"])
-
+    await client.send_message(message.chat.id, youtube)
 
 @spaccobottiglie.on_message(filters.new_chat_members)
 async def benvenuto(client, message):
