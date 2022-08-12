@@ -168,7 +168,7 @@ async def dado(client, message):
 
 @spaccobottiglie.on_message(filters.command("moneta"))
 async def moneta(client, message):
-    moneta = random.choice(["💰è uscito <b>croce</b>", "💰è uscito <b>test</b>"])
+    moneta = random.choice(["💰è uscito <b>croce</b>", "💰è uscito <b>testa</b>"])
     await client.send_message(message.chat.id, moneta)
 
 @spaccobottiglie.on_message(filters.command("qi"))
